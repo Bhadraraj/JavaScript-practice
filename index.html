@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        img {
+            height: 500px;
+            width: 500px;
+        }
+
+        .newClass {
+            color: red;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="html">Html
+        <p id="toRemove">To Remove </p>
+    </div>
+    <button id="btn">Click Me</button>
+    <h1 class="css">CSS1</h1>
+    <h1 class="css">CSS2</h1>
+    <h1 class="css">CSS3</h1>
+    <h1 class="js">Javascript </h1>
+    <img src="./images/flower.jpeg" alt="" id="img">
+
+    <script>
+
+        let htmlVal = document.getElementById('html');
+        let btn = document.getElementById('btn');
+
+        // html.style.color = "blue";
+
+
+        var newContent = document.createElement("h1");
+        // newContent.textContent = "React js ";
+        // html.replaceWith(newContent)
+        let css = document.getElementsByClassName('css')[0];
+        let headingTags = document.getElementsByTagName('h1')[3];
+        let queryVal = document.querySelector('.css');
+        let queryValAll = document.querySelectorAll('.css')[2];
+        // html.textContent = "<h1>Hyper Text Markup Language </h1>";
+        // html.innerHTML += "<h1> Hyper Text Markup Language</h1>";
+        // let flowerImg = document.getElementById('img');
+        // flowerImg.setAttribute("src", "./images/pink-flower.jpeg");
+
+        // var newElement = document.createElement("h4");
+        // newElement.textContent = "New Content";
+        // html.appendChild(newElement)
+        // html.appendChild()
+
+        let toRemove = document.getElementById("toRemove")
+        // console.log(newElement)
+
+
+        btn.addEventListener("click", function (e) {
+            htmlVal.classList.add("newClass");
+            console.log("Clicked")
+        })
+        // var toggleElement =
+
+
+        // console.log(html);
+        // console.log(css);
+        // console.log(headingTags);
+        // console.log(queryVal);
+        // console.log(queryValAll);
+
+
+
+        // html.removeChild(toRemove);
+
+
+
+
+    </script>
+
+</body>
+
+</html>
